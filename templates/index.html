@@ -1,0 +1,49 @@
+﻿<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>신승 RPA 현황</title>
+    <H1>2023 신승 RPA 현황</H1>
+</head>
+<body>
+
+<br>
+<br>
+	<table class="table table-hover table-striped text-center" style="width: auto; border: 1px  solid #111114;">
+		<thead>
+			<tr>
+				<th style="width:20px">BIZ_ID</th>
+				<th style="width:20px">CST_ID</th>
+				<th style="width:20px">고객명</th>
+				<th style="width:120px">주민번호</th>
+				<th style="width:140px">안내문 스크래핑</th>
+				<th style="width:170px">SMART A 신고서 작성</th>
+				<th style="width:170px">SMART A 파일변환</th>
+				<th style="width:170px">Wehago T 신고서 작성</th>
+				<th style="width:120px">파일신고</th>
+			</tr>
+		</thead>
+
+	    <tbody style="text-align: center;">
+			{% for i in data_list %}
+			<tr>
+				<td>{{ i[0] }}</td>
+				<td>{{ i[1] }}</td>
+				<td>{{ i[2] }}</td>
+				<td>{{ i[3] }}</td>
+				<td>{{ i[4] }}</td>
+				<td>{{ i[5] }}</td>
+				<td>{{ i[6] }}</td>
+				<td>{{ i[7] }}</td>
+				<td>{{ i[8] }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+
+	</table>
+
+
+
+</body>
+</html>
